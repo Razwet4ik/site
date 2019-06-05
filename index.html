@@ -1,55 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <head>
+    	<meta charset="utf-8">
+   	 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<title>Hello, world!</title>
 </head>
-<body style="background-image: url(west.jpg);background-size: 100%;height: 300px ">
+<body>
 
-		<h1 class="score ml-5" >0</h1>
+<div class="vopros1">
+	<h1 style="margin-left: 400px; padding-top: 100px;">Сколько цифр в числе  π  после запятых</h1>
 
-	<script>
-		let score = 0 
-		//здесь должно быть создание и вызов функции, также if()
-		let ochki = document.querySelector('.score');
+	<div class="border border-primary mx-auto otvet1" style="width: 800px; height: 75px; margin-top: 120px;">
+		<h4 style="margin-left: 30px; margin-top: 10px;">2 699 999 990 000</h4>
+	</div>
 
-		let rand = Math.random()*80
-		let round = Math.round(rand)
+	<div class="border border-primary mx-auto otvet2" style="width: 800px; height: 75px; margin-top: 10px;">
+		<h4 style="margin-left: 30px;">2 242 301 460 000</h4>
+	</div>
 
-		let random = Math.random()*40
-		let rounded = Math.round(random)
-
-		let elem = document.createElement("img")
-		document.body.appendChild(elem)
-		elem.style.height = "320px"
-		elem.style.position = "absolute"
-		elem.style.marginLeft = round + "%"
-		elem.style.marginTop = rounded + "%"
-		elem.src = "images/shooter.png"
+	<div class="border border-primary mx-auto otvet3" style="width: 800px; height: 75px; margin-top: 10px;">
+		<h4 style="margin-left: 30px;">2 455 555 500 000</h4>
+	</div>
+</div>
 
 
-		let func = function(arg) {
-			score = score + arg
-			ochki.innerHTML = score
-		}
-		for(let i=0;i<1;i++){
-			elem.onclick = function(){
-				elem.style.display = "none"
-				func(1)
-			}
-		}
-		let time = function(){
-			for(let i=0;i<1;i++){
-				elem.style.display = "none"
-			}
-			if(score>=1){
-				alert("You win");
-			}else{
-				alert("You lose")
-			}
-		}
-		setTimeout(time,600)
-	</script>
+<div style="display: none;" class="vopros2">
+	<h1 style="margin-left: 400px; padding-top: 100px;">Кто не является птицей?</h1>
+	<div class="border border-primary mx-auto otvet4" style="width: 800px; height: 75px; margin-top: 120px">
+		<h4 style="margin-left: 30px;">Филин </h4>
+	</div>
+
+	<div class="border border-primary mx-auto otvet5" style="width: 800px; height: 75px; margin-top: 10px">
+		<h4 style="margin-left: 30px;">Пингвин </h4>
+	</div>
+		
+	<div class="border border-primary mx-auto otvet6" style="width: 800px; height: 75px; margin-top: 10px">
+		<h4 style="margin-left: 30px;">Летучая мышь </h4>
+	</div>
+
+</div>
+
+
+<div style="display: none;" class="vopros3">
+	<h1 style="margin-left: 400px; padding-top: 100px;">Где восходит солнце?</h1>
+	<div class="border border-primary mx-auto otvet7" style="width: 800px; height: 75px; margin-top: 120px">
+		<h4 style="margin-left: 30px;">На юге </h4>
+	</div>
+
+	<div class="border border-primary mx-auto otvet8" style="width: 800px; height: 75px; margin-top: 10px">
+		<h4 style="margin-left: 30px;">На севере </h4>
+	</div>
+
+	<div class="border border-primary mx-auto otvet9" style="width: 800px; height: 75px; margin-top: 10px">
+		<h4 style="margin-left: 30px;">На востоке </h4>
+	</div>
+</div>
+
+
+<div style="display: none;" class="vopros4">
+	<h1 style="margin-left: 400px; padding-top: 100px;">Больше часа, меньше минуты.</h1>
+	<div class="border border-primary mx-auto otvet10" style="width: 800px; height: 75px; margin-top: 120px">
+		<h4 style="margin-left: 30px;">Секунда </h4>
+	</div>
+
+	<div class="border border-primary mx-auto otvet11" style="width: 800px; height: 75px; margin-top: 10px">
+		<h4 style="margin-left: 30px;">У минуты больше букв</h4>
+	</div>
+
+	<div class="border border-primary mx-auto otvet12" style="width: 800px; height: 75px; margin-top: 10px">
+		<h4 style="margin-left: 30px;">День </h4>
+	</div>
+</div>
+
+
+<div style="display: none;" class="vopros5">
+	<img src="mk1.jpg" style="height: 300px; margin-left: 450px; margin-top: 50px;">
+	<h1 style="margin-left: 400px;margin-top: 20px;">Что за герой?</h1>
+	<div class="border border-primary mx-auto otvet13" style="width: 800px; height: 75px; margin-top: 80px">
+		<h4 style="margin-left: 30px;">Хернь</h4>
+	</div>
+
+	<div class="border border-primary mx-auto otvet14" style="width: 800px; height: 75px; margin-top: 10px">
+		<h4 style="margin-left: 30px;">Рептилия в облике человека</h4>
+	</div>
+
+	<div class="border border-primary mx-auto otvet15" style="width: 800px; height: 75px; margin-top: 10px">
+		<h4 style="margin-left: 30px;">Скорпион</h4>
+	</div>
+</div>
+
+
+
+<script>
+//Вопрос 1
+	document.querySelector(".otvet1").onclick = function(){
+		alert("Правильно!");
+		document.querySelector(".vopros1").style.display = "none";
+		document.querySelector(".vopros2").style.display = "block";
+	}
+
+	document.querySelector(".otvet2").onclick = function(){
+		alert("Неудачник")
+	}
+
+	document.querySelector(".otvet3").onclick = function(){
+		alert("Неудачник")
+	}
+
+//Вопрос 2
+	document.querySelector(".otvet4").onclick = function(){
+		alert("LOOSER")
+	}
+
+	document.querySelector(".otvet5").onclick = function(){
+		alert("Это... НАЖМИ НА 1 ВОПРОС ОН С ПОДВОХОМ!!!")
+	}
+
+	document.querySelector(".otvet6").onclick = function(){
+		alert("Офигел от пингвина?")
+		document.querySelector(".vopros2").style.display = "none";
+		document.querySelector(".vopros3").style.display = "block";
+	}
+
+//Вопрос 3
+	document.querySelector(".otvet7").onclick = function(){
+		alert("3 Правильный P.S. нет")
+	}
+
+	document.querySelector(".otvet8").onclick = function(){
+		alert("Молодец!!! это не правильно")
+	}
+
+	document.querySelector(".otvet9").onclick = function(){
+		alert("NEUDACHA")
+		document.querySelector(".vopros3").style.display = "none";
+		document.querySelector(".vopros4").style.display = "block";
+	}
+
+//Вопрос 4
+	document.querySelector(".otvet10").onclick = function(){
+		alert("正しく推測")
+		document.querySelector(".vopros4").style.display = "none";
+		document.querySelector(".vopros5").style.display = "block";
+	}
+
+	document.querySelector(".otvet11").onclick = function(){
+		alert("Молодец продолжай в том же духе!")
+	}
+
+	document.querySelector(".otvet12").onclick = function(){
+		alert("ясень пень")
+	}
+
+//Вопрос 5
+	document.querySelector(".otvet13").onclick = function(){
+		alert("ХЕРНЯ!")
+	}
+
+	document.querySelector(".otvet14").onclick = function(){
+		alert("Нет")
+	}
+
+	document.querySelector(".otvet15").onclick = function(){
+		alert("Очевидно")
+		document.querySelector(".vopros5").style.display = "none";
+		document.querySelector(".vopros6").style.display = "block";
+	}
+</script>
 </body>
 </html>
