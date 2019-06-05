@@ -1,271 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		img{
+			width: 100px; 
+			position: absolute; 
+			display: none;
+		}
+
+	
+	</style>
 </head>
-<body class="bg-light">
-<div class="col-12 border-bottom border-dark mb-3">
-	<div class="container">
-		<div class="row p-2">
-			<div class="col-4"> <!--Панель управления-->
-				<div class="row">
-					<div class="col-4">
-						<div class="d-flex">
-							<img src="home.png" class="w-25 h-25">
-							<a href="">Домой</a>
-						</div>
-					</div>
-					<div class="col-4">
-						<div class="d-flex">
-							<img src="notification.png" class="w-25 h-25">
-							<a href="">Уведомления</a>
-						</div>
-					</div>
-					<div class="col-4">
-						<div class="d-flex">
-						<img src="message.png" class="w-25 h-25"> 
-						<a href="">Сообщения</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-4 text-center">
-				<img src="twitter.png" width="30">
-			</div>
-			<div class="col-4">
-				<input type="" name="">
-				<img src="avatar.jpg" class="rounded-circle">
-				<button type="button" class="btn btn-primary">Твитнуть</button>
-			</div>
-		</div>
+<body>
+	<div style="background-image: url(game.png); height: 1000px; background-size: 100% 100%">
+		
+		<button class="btn btn-warning btn-fl" style="position: absolute;  margin-left: 20%; margin-top: 3%">Увеличить цветы</button>
+		<button class="btn btn-success btn-sh" style="position: absolute;  margin-left: 30%; margin-top: 3%">Увеличить горох</button>
+		<button class="btn btn-danger  btn-up" style="position: absolute;  margin-left: 40%; margin-top: 3%">Улучшить  горох</button>
+		<button class="btn btn-info    btn-dr" style="position: absolute;  margin-left: 50%; margin-top: 3%">Увеличить дракона</button>
+
+		<!--цветы 1 ряд-->
+		<img class="flower" src="sunflower.png"  style=" margin-left: 33%; margin-top: 13%; ">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 33%; margin-top: 19%; ">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 33%; margin-top: 25%; ">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 33%; margin-top: 31%; ">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 33%; margin-top: 37%; ">
+		<button class="flower_btn" style="color: yellow; font-weight: bold; position: absolute; margin-left: 33%; margin-top: 17%; ">PLANT</button>	
+		<button class="flower_btn" style="color: yellow; font-weight: bold; position: absolute; margin-left: 33%; margin-top: 23%; ">PLANT</button>
+		<button class="flower_btn" style="color: yellow; font-weight: bold; position: absolute; margin-left: 33%; margin-top: 29%; ">PLANT</button>
+		<button class="flower_btn" style="color: yellow; font-weight: bold; position: absolute; margin-left: 33%; margin-top: 35%; ">PLANT</button>
+		<button class="flower_btn" style="color: yellow; font-weight: bold; position: absolute; margin-left: 33%; margin-top: 41%; ">PLANT</button>
+
+		<!--горох 2 ряд-->
+		<img class="shooter" src="peashooter.png"  style=" margin-left: 40%; margin-top: 13%;">	
+		<img class="shooter" src="peashooter.png"  style=" margin-left: 40%; margin-top: 19%;">	
+		<img class="shooter" src="peashooter.png"  style=" margin-left: 40%; margin-top: 25%;">	
+		<img class="shooter" src="peashooter.png"  style=" margin-left: 40%; margin-top: 31%;">
+		<img class="shooter" src="peashooter.png"  style=" margin-left: 40%; margin-top: 37%;">		
+		<button class="shooter_btn" style="color: green; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 17%; ">PLANT</button>
+		<button class="shooter_btn" style="color: green; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 23%; ">PLANT</button>	
+		<button class="shooter_btn" style="color: green; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 29%; ">PLANT</button>
+		<button class="shooter_btn" style="color: green; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 35%; ">PLANT</button>
+		<button class="shooter_btn" style="color: green; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 41%; ">PLANT</button>		
+
+		<!--дракон 3 ряд-->
+		<img class="dragon" src="dragon.png"  style=" margin-left: 47%; margin-top: 13%;">	
+		<img class="dragon" src="dragon.png"  style=" margin-left: 47%; margin-top: 19%;">	
+		<img class="dragon" src="dragon.png"  style=" margin-left: 47%; margin-top: 25%;">	
+		<img class="dragon" src="dragon.png"  style=" margin-left: 47%; margin-top: 31%;">
+		<img class="dragon" src="dragon.png"  style=" margin-left: 47%; margin-top: 37%;">
+		
+		<button class="dragon_btn" style="color: red; font-weight: bold; position: absolute; margin-left: 47%; margin-top: 17%; ">PLANT</button>	
+		<button class="dragon_btn" style="color: red; font-weight: bold; position: absolute; margin-left: 47%; margin-top: 23%; ">PLANT</button>
+		<button class="dragon_btn" style="color: red; font-weight: bold; position: absolute; margin-left: 47%; margin-top: 29%; ">PLANT</button>
+		<button class="dragon_btn" style="color: red; font-weight: bold; position: absolute; margin-left: 47%; margin-top: 35%; ">PLANT</button>
+		<button class="dragon_btn" style="color: red; font-weight: bold; position: absolute; margin-left: 47%; margin-top: 41%; ">PLANT</button>							
 	</div>
-</div>
-<div class="container">
-	<div class="row">
-		<div class="col-3">
-			<div class="bg-white"> 								<!--Профиль-->
-					<img src="background.jpg" class="w-100">
-					<div class="row">
-						<div class="col-4">
-							<img src="avatar.jpg" class="rounded-circle">
-						</div>
-						<div class="col-8">
-							<a href="">Mary Smith</a>
-							<a href="">@Mary_Smith</a>
-						</div>
-						</div>
-						<div class="row">
-							<div class="col-6">
-								<div >
-									<a href="">Твиты</a>
-								</div>
-								<div>
-									<a href="">276</a>
-								</div>
-							</div>
-							<div class="col-6">
-								<div >
-									<a href="">Читаемые</a>
-								</div>
-								<div>
-									<a href="">106</a>
-								</div>
-							</div>
-						
-					</div>
-			</div>
-			<div class="bg-white mt-5"> 						<!--Актуальные темы-->
-			</div>
-		</div>
-		<div class="col-6 bg-white"> 							<!--Новостная лента-->
-				<div class="row">
-					<div class="col-2">
-						<img src="avatar.jpg" class="rounded-circle">
-					</div>
-					<div class="col-10">
-						<input type="text" class="form-control" placeholder="Что нового?" aria-label="Что нового?" aria-describedby="basic-addon2">
-					</div>
-					<div class="col-2">
-						
-					</div>
-					<div class="col-6">
-						
-					</div>
-				</div>
-				<div class="row">       							 <!--первый пост-->
-					<div class="col-2">
-						<img src="post1.jpg">
-					</div>
-					<div class="col-10">
-						<div class="row">
-							<h5>Habr</h5>
-							<a href="">
-							<p>@Habr_com 32 min.</p>
-							</a>
-						</div>
-						<div>
-							<p>
-							Представители Инженерного совета Интернета объявили, что протокол QUIC для передачи данных на транспортном уровне готов для широкомасштабных тестов.
-							</p>
-							<p>Однако из-за ряда недостатков, его пока нельзя представить в виде RFC: <a href="">http://amp.gs/vMPM </a>
-						</div>
-						<div>
-							<img src="habr.jpg" class="w-100">
-						</div>
-						<div class="d-flex">
-							<div class="col-3">
-								<a href="">
-									<img src="comment.png">
-								</a>
-							</div>
-							<div class="col-3">
-								<a href="">
-									<img src="retweet.png">
-								</a>
-							</div>
-							<div class="col-3">
-								<a href="">
-									<img src="like.png">
-								</a>
-							</div>
-							<div class="col-3">
-								<a href="">
-									<img src="envelope.png">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row"> 									<!--второй пост-->
-					<div class="col-2">
-						<img src="post2.png">
-					</div>
-					<div class="col-10">
-						<div class="row">
-							<h5>Вести.Hi-tech</h5>
-							<a href="">
-							<p>@vestihitech 45 min.</p>
-							</a>
-						</div>
-						<div>
-							<p>
-							Samsung выпустила смартфон-"раскладушку" за 2700 долларов <a href="">https://hitech.vesti.ru/article/1096574 </a>
-							</p>
-						</div>
-						<div>
-							<img src="vesti_hi_tech.jpg" class="w-100">
-						</div>
-						<div class="d-flex">
-							<div class="col-3">
-								<a href="">
-									<img src="comment.png">
-								</a>
-							</div>
-							<div class="col-3">
-								<a href="">
-									<img src="retweet.png">
-								</a>
-							</div>
-							<div class="col-3">
-								<a href="">
-									<img src="like.png">
-								</a>
-							</div>
-							<div class="col-3">
-								<a href="">
-									<img src="envelope.png">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">  									<!--третий пост-->
-					<div class="col-2">
-						<img src="post3.jpg">
-					</div>
-					<div class="col-10">
-						<div class="row">
-							<h5>TJ</h5>
-							<a href="">
-							<p>@tjournal 1 ч.</p>
-							</a>
-						</div>
-						<div>
-							<p>
-							Рогозин объявил об отказе Роскосмоса от эксплуатации «Союза-ФГ» в конце 2019 года. Последний запуск ракеты закончился аварией <a href=""> https://t.co/iC4E05CFMM </a>
-							</p>
-						</div>
-						<div>
-							<img src="roscosmos.jpg" class="w-100">
-						</div>
-						<div class="d-flex">
-							<div class="col-3">
-								<a href="">
-									<img src="comment.png">
-								</a>
-							</div>
-							<div class="col-3">
-								<a href="">
-									<img src="retweet.png">
-								</a>
-							</div>
-							<div class="col-3">
-								<a href="">
-									<img src="like.png">
-								</a>
-							</div>
-							<div class="col-3">
-								<a href="">
-									<img src="envelope.png">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-		</div>
-		<div class="col-3"> 									<!--Интересные люди-->
-			<div class="bg-white">
-				<div class="row"> 
-					<div class="col-4"> 						<!--ondediorrussia-->
-						<h6>Кого читать</h6>
-					</div>
-					<div class="col-8">
-						<a href="">Обновить все</a>
-					</div>
-					<div class="row">
-						<div class="col-4">
-							<img src="1.jpg" class="rounded-circle">
-						</div>
-						<div class="col-8">
-							<a href="">Onedio.ru</a>
-							<p>@onediorussia</p>
-							<button type="button" class="btn btn-outline-primary">Читать</button>	
-						</div>
-					</div>
-					<div class="col-4"> 						<!--Катавасия-->
-						<img src="2.jpg" class="rounded-circle w-100">
-					</div>
-					<div class="col-8">
-						<a href="">Катавасия</a>
-						<p>@ktvsktvs</p>
-						<button type="button" class="btn btn-outline-primary">Читать</button>
-					</div>
-					<div class="col-4">
-						<img src="gmail.png" class="rounded-circle w-100">
-					</div>
-					<div class="col-8">
-						<p>Найдите знакомых</p>
-						<a href="">Импортируйте контакты из gmail</a>
-					</div>
-				</div>
-				<a href="">Переключить другие адресные книги</a>
-			</div>
-		</div>
-	</div>
-</div>
+
+<script>
+	let num = 0
+
+	let dragon = document.querySelectorAll(".dragon");
+	let dragon_btn = document.querySelectorAll(".dragon_btn");
+
+	let flowers = document.querySelectorAll(".flower");
+	let flower_btn = document.querySelectorAll(".flower_btn");
+
+	let shooter = document.querySelectorAll(".shooter");
+	let shooter_btn = document.querySelectorAll(".shooter_btn");
 
 
+	//нажатие на цветы
+	flower_btn[0].onclick = function(){
+		flowers[0].style.display = "block"
+		flower_btn[0].style.display = "none"
+	}    
+	flower_btn[1].onclick = function(){
+		flowers[1].style.display = "block"
+		flower_btn[1].style.display = "none"
+	}   
+	flower_btn[2].onclick = function(){
+		flowers[2].style.display = "block"
+		flower_btn[2].style.display = "none"
+	}   
+	flower_btn[3].onclick = function(){
+		flowers[3].style.display = "block"
+		flower_btn[3].style.display = "none"
+	}   
+	flower_btn[4].onclick = function(){
+		flowers[4].style.display = "block"
+		flower_btn[4].style.display = "none"
+	}   
+
+
+	//нажатие на горох
+	shooter_btn[0].onclick = function(){
+		shooter[0].style.display = "block"
+		shooter_btn[0].style.display = "none"
+	}   
+	shooter_btn[1].onclick = function(){
+		shooter[1].style.display = "block"
+		shooter_btn[1].style.display = "none"
+	}   
+	shooter_btn[2].onclick = function(){
+		shooter[2].style.display = "block"
+		shooter_btn[2].style.display = "none"
+	}   
+	shooter_btn[3].onclick = function(){
+		shooter[3].style.display = "block"
+		shooter_btn[3].style.display = "none"
+	}   
+	shooter_btn[4].onclick = function(){
+		shooter[4].style.display = "block"
+		shooter_btn[4].style.display = "none"
+	}
+
+
+	//нажатие на дракона
+	dragon_btn[0].onclick = function(){
+		dragon[0].style.display = "block"
+		dragon_btn[0].style.display = "none"
+	}  
+	dragon_btn[1].onclick = function(){
+		dragon[1].style.display = "block"
+		dragon_btn[1].style.display = "none"
+	}   
+	dragon_btn[2].onclick = function(){
+		dragon[2].style.display = "block"
+		dragon_btn[2].style.display = "none"
+	}   
+	dragon_btn[3].onclick = function(){
+		dragon[3].style.display = "block"
+		dragon_btn[3].style.display = "none"
+	}    
+	dragon_btn[4].onclick = function(){
+		dragon[4].style.display = "block"
+		dragon_btn[4].style.display = "none"
+	}   
+
+	//увеличить горох
+	document.querySelector(".btn-sh").onclick = function(){
+		shooter[num].style.width = "120px"
+		num = num + 1
+	}
+	//увеличить цветок
+	document.querySelector(".btn-fl").onclick = function(){
+		for(let index = 0; index<6; index = index + 1){	
+		flowers[index].style.width = "120px"
+		}
+	}
+	//улучшить горох
+	document.querySelector(".btn-up").onclick = function(){
+		for(let index = 0; index<5; index = index + 1){
+		shooter[index].src = ("peasoldier.png")
+		}
+	}
+
+	document.querySelector(".btn-dr").onclick = function(){
+		for(let index = 0; index<6; index = index + 1){	
+		dragon[index].style.width = "120px"
+		}
+	}
+
+
+</script>
 </body>
 </html>
