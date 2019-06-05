@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style="background-image: url(west.jpg);background-size: 100%;height: 300px ">
+
+		<h1 class="score ml-5" >0</h1>
+
+	<script>
+		let score = 0 
+		//здесь должно быть создание и вызов функции, также if()
+		let ochki = document.querySelector('.score');
+
+		let rand = Math.random()*80
+		let round = Math.round(rand)
+
+		let random = Math.random()*40
+		let rounded = Math.round(random)
+
+		let elem = document.createElement("img")
+		document.body.appendChild(elem)
+		elem.style.height = "320px"
+		elem.style.position = "absolute"
+		elem.style.marginLeft = round + "%"
+		elem.style.marginTop = rounded + "%"
+		elem.src = "images/shooter.png"
+
+
+		let func = function(arg) {
+			score = score + arg
+			ochki.innerHTML = score
+		}
+		for(let i=0;i<1;i++){
+			elem.onclick = function(){
+				elem.style.display = "none"
+				func(1)
+			}
+		}
+		let time = function(){
+			for(let i=0;i<1;i++){
+				elem.style.display = "none"
+			}
+			if(score>=1){
+				alert("You win");
+			}else{
+				alert("You lose")
+			}
+		}
+		setTimeout(time,600)
+	</script>
+</body>
+</html>
